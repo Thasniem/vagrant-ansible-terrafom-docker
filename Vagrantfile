@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-22.04"
   config.vm.hostname = "devops-lab"
   config.vm.network "private_network", ip: "192.168.56.10"
-  config.vm.network "forwarded_port", guest: 80, host: 8080, auto_correct: true
+  config.vm.network "forwarded_port", guest: 80, host: 8081, auto_correct: true
   config.ssh.insert_key = false
   config.ssh.private_key_path = "~/.vagrant.d/insecure_private_key"
 
